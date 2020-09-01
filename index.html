@@ -9,7 +9,16 @@
         <title>Pig Game</title>
     </head>
 
-    <body><!--
+    <body>
+
+    <button onclick="myName()">Click</button>
+    <div id="name">73</div>
+    <div id="totalscore">23</div>
+
+
+
+    <script src="app.js"></script>
+    <!--
     <button id="btn">Click</button>
     <P class="primaryname" id="name"></P>
     <script>
@@ -39,30 +48,7 @@
         }
 
     </script>-->
-    <button onclick="myName()">Click</button>
-    <div id="name">73</div>
-    <div id="totalscore">23</div>
-    <script>
-        var total=0;
-        document.getElementById('name').textContent='0';
-        document.getElementById('totalscore').textContent='0';
-        function myName(){
-            var dice= Math.floor(Math.random()*6)+1;
-            console.log("the score is"+dice);
-           /* document.querySelector('#name').textContent=dice;*/
-            document.getElementById('name').innerHTML=dice;
-            //adding the score
-            if(dice!==1){
-                //add elements
-                total+=dice;
-                document.getElementById('totalscore').textContent=total;
-            }
-            else{
-                console.log("Invalid");
-                nextPlayer();
-            }
-        }
-    </script>
+
 
     <!--
         <div class="wrapper clearfix">
@@ -94,7 +80,7 @@
             <img src="dice-5.png" alt="Dice" class="dice" id="dice-2">
         </div>
         -->
-        <script src="app.js"></script>
+
         <!--<script src="challenges.js"></script>-->
 
     </body>
