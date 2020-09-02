@@ -1,2 +1,2 @@
 # diceGame
- Javascript dice game with 2 playes
+ Javascript dice game with 2 players
