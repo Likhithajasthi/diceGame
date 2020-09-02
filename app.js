@@ -24,20 +24,22 @@ function myName() {
 
 
 }*/
-var total;
+var total,scores,activeplayer;
+    scores[0,0];
     total=0;
-document.getElementById('name').textContent='0';
-document.getElementById('totalscore').textContent='0';
-function myName() {
-    var dice = Math.floor(Math.random() * 6) + 1;
-    console.log("the score is" + dice);
-    document.getElementById('name').innerHTML = dice;
-    if (dice !== 1) {
-        //add elements
-        total += dice;
-        document.getElementById('totalscore').textContent=total;
-    } else {
-       console.log("invalid")
-    }
+    activeplayer=0;
+    document.getElementById('name').textContent='0';
+    document.getElementById('totalscore').textContent='0';
+    function myName() {
+        var dice = Math.floor(Math.random() * 6) + 1;
+        console.log("the score is" + dice);
+        document.getElementById('name').innerHTML = dice;
+        if (dice !== 1) {
+            //add elements
+            total += dice;
+            document.getElementById('totalscore').textContent=total;
+        } else {
+           console.log("invalid")
+        }
 
-}
+    }
